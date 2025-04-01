@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="tmp.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <style>
+            img{
+                width:450px;
+                height:450px;
+           }
+            #a1 {
+                top:5px;
+                width: 450px;
+                height: 450px;
+                overflow: hidden;
+                border: 5px solid #DAA520;
+                box-shadow: 5px 5px 5px #555;
+                position:static;
+            }
+            #a2 {
+                width: 450px;
+                height: 1350px;
+                position: relative;
+                top: 0; /* 初始位置 */
+            }
+            #lt{
+                top:10px;
+    left: 353px;
+                width: 460px;
+                position:sticky;
+                background-color:#DAA520 ;
+                box-shadow: 5px 5px 5px #555;
+                text-align: center;
+                
+                    }
+            button{
+                box-shadow: 5px 5px 5px #555;
+            }
+            #dphoto1{
+            width: 500px;
+            height: 470px;
+            float: left;
+            
+        }
+        #dphoto2{
+            width:600px;
+            height: 470px;
+            float:left;
+           
+        }
+        #sphoto{
+            width:150px;
+            height: 150px;
+        }
+        </style>
+        <script>
+            $(document).ready(function () {
+                $("#bt1").click(function () {
+                    $("#a2").animate({ top: '-0px' }, 1000);
+                })
+                $("#bt2").click(function () {
+                    $("#a2").animate({ top: '-455px' }, 1000);
+                }) 
+                $("#bt3").click(function () {
+                    $("#a2").animate({ top: '-910px' }, 1000);
+                }) 
+                
+            });
+        </script>
+    </head>
+    <body>
+        <div id="con1">
+            <div id="bn1"><img id="logo" src="images/th.jpg"></div>
+            <div id="bn2">
+                <div id="t1"><h1>Coffee</h1></div>
+                <div id="t2">
+                    <ul>
+                        <li><a href="index.html">回首頁</a></li>
+                        <li><a href="pord.html">產品介紹</a></li>
+                        <li><a href="coffee.html">咖啡</a></li>
+                        <li><a href="dessert.html">點心</a></li>
+                        <li><a href="tea.html">花茶</a></li>
+                     </ul>
+                </div>
+            </div>
+            
+
+           
+        </div>
+        <div id="con2">
+            <div id="dphoto1">
+                <div id="a1">
+                    <div id="a2">
+                        <img src="images/Cappuccino.png">
+                        <img src="images/Espresso.png">
+                        <img src="images/Latte.png">
+                    </div>
+                </div>
+                <div id="lt">
+                    <button id="bt1">1</button>
+                    <button id="bt2">2</button>
+                    <button id="bt3">3</button>
+                </div>
+            </div>
+        
+        <div id="dphoto2">
+            <table>
+                <tr>
+                    <td><img id="sphoto" src="images/rose_tea.png"></td>
+                    <td>rose_tea</td>
+                </tr>
+                <tr>
+                    <td><img id="sphoto" src="images/jasmine_tea.png"></td>
+                    <td>jasmine_tea</td>
+                </tr>
+<tr>
+                    <td><img id="sphoto" src="images/marigold_tea.png"></td>
+                    <td>marigold_tea</td>
+                </tr>
+             </table>
+        </div>
+        </div>
+        <div id="con3"><h3>© 2025 夢想咖啡館 版權所有   地址:夢想路18號  TEL:07-1234567</h3></div>
+    </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="tmp.css"> 
+    <style>
+        img{
+            width:450px;
+            height:450px;
+
+        }
+        #a1 {
+            top:5px;
+            width: 450px;
+            height: 450px;
+            overflow: hidden;
+            border: 5px solid #DAA520;
+            box-shadow: 5px 5px 5px #555;
+            margin-left: 450px;
+            position:static;
+        }
+        #a2 {
+            width: 450px;
+            height: 1800px;
+            position: relative;
+            top: 0; /* 初始位置 */
+        }
+        #lt{
+            top:10px;
+            left: 450px;
+            width: 460px;
+            position:sticky;
+            background-color:#DAA520 ;
+            box-shadow: 5px 5px 5px #555;
+            text-align: center;
+            
+                }
+        button{
+            box-shadow: 5px 5px 5px #555;
+        }
+       #cc3{
+            left: 950px;
+            width: 460px;
+            top:300px;
+            position:absolute;
+            text-align: center;
+            
+       }
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#bt1").click(function () {
+                $("#a2").animate({ top: '-0px' }, 1000);
+            })
+            $("#bt2").click(function () {
+                $("#a2").animate({ top: '-455px' }, 1000);
+            }) 
+            $("#bt3").click(function () {
+                $("#a2").animate({ top: '-910px' }, 1000);
+            }) 
+            $("#bt4").click(function () {
+                $("#a2").animate({ top: '-1365px' }, 1000);
+            })       
+        });
+    </script>
+
+    </head>
+    <body>
+        <div id="con1">
+            <div id="bn1"><img id="logo" src="images/th.jpg"></div>
+            <div id="bn2">
+                <div id="t1"><h1>Dream's Coffee</h1></div>
+                <div id="t2">
+                    <ul>
+                        <li><a href="index.html">回首頁</a></li>
+                        <li><a href="about.html">關於我們</a></li>
+                        <li><a href="pord.html">產品介紹</a></li>
+                        <li>聯絡我們</li>
+                        <li>在線訂購</li>
+                     </ul>
+                </div>
+            </div>
+           
+        </div>
+        <div id="con2">
+              <div id="a1">
+                <div id="a2">
+                    <img src="images/dreamcofe01.png">
+                    <img src="images/dreamcafe02.png">
+                    <img src="images/dreamcafe03.png">
+                    <img src="images/dreamcafe04.png">
+                </div>
+            </div>
+            <div id="lt">
+                <button id="bt1">1</button>
+                <button id="bt2">2</button>
+                <button id="bt3">3</button>
+                <button id="bt4">4</button>
+            </div>
+        </div>
+        
+        <div id="cc3">
+                在夢想咖啡，我們相信，每一杯咖啡都能帶來一份溫暖與啟發。我們致力於打造一個充滿人情味的空間，讓顧客不僅能享受香醇的咖啡，還能感受到家的溫馨與安心。
+夢想咖啡的誕生源於創辦人對生活的反思與熱情。在一次旅行中，他被一家小咖啡館的氛圍深深打動，於是決心回到家鄉，創建一個屬於本地社區的咖啡空間。
+我們選用公平貿易的咖啡豆，支持本地農產品，細心沖煮每一杯咖啡，用心詮釋對品質與社會責任的承諾。夢想咖啡不僅是喝咖啡的地方，更是一個讓人分享、連結與啟發夢想的社區平台。
+我們定期舉辦讀書會、音樂會及手作課程，讓這裡成為創意與交流的中心。每位顧客，都是夢想咖啡故事的一部分。
+夢想咖啡，讓夢想從一杯咖啡開始。
+            </div>
+          </div>
+       
+        <div id="con3"><div id="con3"><h3>© 2025 夢想咖啡館 版權所有   地址:夢想路18號  TEL:07-1234567</h3></div></div>
+    </body>
+</html>
